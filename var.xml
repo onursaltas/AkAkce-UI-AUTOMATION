@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<class>
+
+    <baseURL>https://www.akakce.com/akakcem/giris/</baseURL>
+    <userName>qquestionanswerr@gmail.com</userName>
+    <password>Aa12345?</password>
+
+    <databaseIp>111.22.22.33</databaseIp>
+    <connectionUrlBase>jdbc:mysql://111.22.22.33:3306</connectionUrlBase>
+    <databaseName>OnurDB</databaseName>
+    <dbUser>onur</dbUser>
+    <dbPassword>saltas</dbPassword>
+
+
+    <testResult>SUCCESS</testResult>
+
+    <downloadsFolder></downloadsFolder>
+    <testCaseSampleDataExcel2></testCaseSampleDataExcel2>
+    <testCaseSampleDataExcel></testCaseSampleDataExcel>
+    <projectPath></projectPath>
+    <excelFilesPath></excelFilesPath>
+
+</class>

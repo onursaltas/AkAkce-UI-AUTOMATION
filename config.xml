@@ -1,0 +1,17 @@
+<?xml version = "1.0"?>
+<class>
+    <firefoxDriver>.\\webdrivers\\geckodriver.exe</firefoxDriver>
+    <chromeDriver>webdrivers/chromedriver</chromeDriver>
+    <ieDriver>.\\webdrivers\\IEDriverServer.exe</ieDriver>
+    <failurelogPath>..//Screenshot</failurelogPath>
+    <failurelogFilePath>..//Screenshot</failurelogFilePath>
+    <failureScreenShotName>//FailureScreen.png</failureScreenShotName>
+    <failureLogName>\\log.txt</failureLogName>
+    <headless>0</headless>
+    <gridEnable>0</gridEnable>
+    <gridPlatform>LINUX</gridPlatform>
+    <gridBrowserType>chrome</gridBrowserType>
+    <localBrowserType>chrome</localBrowserType>
+    <gridNodeIP></gridNodeIP>
+    <acceptSSL>1</acceptSSL>
+</class>
