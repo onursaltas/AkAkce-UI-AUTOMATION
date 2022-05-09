@@ -12,6 +12,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.awt.*;
 
@@ -35,7 +36,7 @@ public class Initialization {
     public void init(BrowserType browserType) {
 
         if (browserType == BrowserType.FIREFOX) {
-            System.setProperty("webdriver.gecko.driver", Config.firefoxDriver);
+            WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options = new FirefoxOptions();
             if (Config.headless.equals("1")) {
                 options.setHeadless(true);
@@ -44,8 +45,8 @@ public class Initialization {
                 driver = new FirefoxDriver(options);
             }
         } else if (browserType == BrowserType.CHROME) {
-            System.setProperty("webdriver.chrome.driver", Config.chromeDriver);
             ChromeOptions options = new ChromeOptions();
+            WebDriverManager.chromedriver().setup();
             options.setPageLoadStrategy(PageLoadStrategy.EAGER);
             if (Config.headless.equals("1")) {
                 options.addArguments("--headless");
@@ -54,7 +55,7 @@ public class Initialization {
                 driver = new ChromeDriver(options);
             }
         } else if (browserType == BrowserType.IE) {
-            System.setProperty("webdriver.ie.driver", Config.ieDriver);
+            WebDriverManager.edgedriver().setup();
 
             InternetExplorerOptions ieOptions = new InternetExplorerOptions();
             ieOptions.ignoreZoomSettings();
