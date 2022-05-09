@@ -2,14 +2,13 @@ package main.java.page.pages.MainPages;
 
 import main.java.base.functions.AssertionFunctions;
 import main.java.base.functions.BrowserController;
-import main.java.base.functions.HelperMethods;
 import main.java.base.functions.NavigationController;
 import main.java.page.constants.MainConstants.AssertAttributes;
 import main.java.page.constants.MainConstants.SearchProductConstants;
 import main.java.page.constants.MainConstants.SelectAttributes;
 import main.java.page.pages.InıtıalPages.LoginPage;
 
-public class ProductPage extends LoginPage implements BrowserController, AssertionFunctions, NavigationController , HelperMethods, AssertAttributes, SearchProductConstants , SelectAttributes {
+public class ProductPage extends LoginPage implements BrowserController, AssertionFunctions, NavigationController , AssertAttributes, SearchProductConstants , SelectAttributes {
 
 
     public void SendSearchBox(String name) {
