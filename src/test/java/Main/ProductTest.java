@@ -11,7 +11,7 @@ import java.util.WeakHashMap;
 
 public class ProductTest extends BaseTest implements BrowserController {
 
-
+     // DONT FORGET When you are runnig this project before you can set file ---> project structure --> sdk 1.8 and language level as SDK Default 
     ProductPage productPage = new ProductPage();
 
     @Test
